@@ -1,11 +1,11 @@
-About r-networkcomparisontest
-=============================
+About r-networkcomparisontest-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-networkcomparisontest-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=NetworkComparisonTest
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-networkcomparisontest-feedstock/blob/main/LICENSE.txt)
 
 Summary: This permutation based hypothesis test, suited for Gaussian and binary data, assesses the difference between two networks based on several invariance measures (e.g., network structure invariance, global strength invariance, edge invariance). Network structures are estimated with l1-regularized partial correlations (Gaussian data) or with l1-regularized logistic regression (eLasso, binary data). Suited for comparison of independent and dependent samples. For dependent samples, only supported for data of one group which is measured twice. See van Borkulo et al. (2017) <doi:10.13140/RG.2.2.29455.38569>.
 
