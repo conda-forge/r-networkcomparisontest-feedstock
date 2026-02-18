@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/NetworkComparisonTest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/NetworkComparisonTest/NetworkComparisonTest_{{ version }}.tar.gz
-  sha256: 11f61db9031c54ed28dce0310f51270b0bbd60bbdbf0ec565beb79a80f4e6223
+  sha256: 14a60a2bb78043483638d44e035ce05d51437c5077433d55681266041445eced
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,8 +45,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=NetworkComparisonTest
   license: GPL-2.0-only
-  summary: This permutation based hypothesis test, suited for Gaussian and binary data, assesses the difference between two networks based on several invariance measures (e.g., network structure invariance, global strength invariance, edge invariance). Network structures are estimated with l1-regularized partial correlations
-    (Gaussian data) or with l1-regularized logistic regression (eLasso, binary data). Suited for comparison of independent and dependent samples. For dependent samples, only supported for data of one group which is measured twice. See van Borkulo et al. (2017) <doi:10.13140/RG.2.2.29455.38569>.
+  summary: This permutation based hypothesis test, suited for Gaussian and binary data, assesses the difference between two networks based on several invariance measures (e.g., network structure invariance, global strength invariance, edge invariance). Network structures are estimated with l1-regularized partial 
+    correlations (Gaussian data) or with l1-regularized logistic regression (eLasso, binary data). Suited for comparison of independent and dependent samples. For dependent samples, only supported for data of one group which is measured twice. See van Borkulo et al. (2017) <doi:10.13140/RG.2.2.29455.38569>.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
