@@ -1,4 +1,4 @@
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/NetworkComparisonTest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/NetworkComparisonTest/NetworkComparisonTest_{{ version }}.tar.gz
-  sha256: 14a60a2bb78043483638d44e035ce05d51437c5077433d55681266041445eced
+  sha256: eb03bb37ad8ee451433fbfd451013ed15688e70e598a1c31efc5ccd775f79052
 
 build:
   number: 0
